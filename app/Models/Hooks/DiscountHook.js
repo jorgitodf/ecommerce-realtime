@@ -6,7 +6,8 @@ const Database = use('Database')
 const DiscountHook = (exports = module.exports = {})
 
 DiscountHook.calculateValues = async model => {
-  var couponProducts, discountItems = []
+  var couponProducts,
+    discountItems = []
   model.discount = 0
   const coupon = await Coupon.find(model.coupon_id)
   const order = await Order.find(model.order_id)

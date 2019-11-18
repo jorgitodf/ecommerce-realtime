@@ -4,6 +4,9 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
+const Category = use('App/Models/Category')
+const Transformer = use('App/Transformers/Admin/CategoryTransformer')
+
 /**
  * Resourceful controller for interacting with categories
  */
